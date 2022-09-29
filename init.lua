@@ -58,18 +58,7 @@ local config = {
       return config -- return final config table to use in require("null-ls").setup(config)
     end,
     treesitter = { -- overrides `require("treesitter").setup(...)`
-      ensure_installed = {
-        "bash",
-        "go",
-        "json",
-        "lua",
-        "python",
-        "ruby",
-        "rust",
-        "toml",
-        "vim",
-        "yaml"
-      },
+      ensure_installed = {},
     },
     -- use mason-lspconfig to configure LSP installations
     ["mason-lspconfig"] = { -- overrides `require("mason-lspconfig").setup(...)`
@@ -91,10 +80,12 @@ local config = {
         "bash-debug-adapter",
         "debugpy",
         "go-debug-adapter",
+        "golangci-lint",
         "jq",
         "luacheck",
         "markdownlint",
         "prettier",
+        "rubocop",
         "shellcheck",
         "shellharden",
         "shfmt",
