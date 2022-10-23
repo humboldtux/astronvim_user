@@ -6,7 +6,7 @@
 -- where a value with no key simply has an implicit numeric key
 local config = {
 
-   -- Configure plugins
+  -- Configure plugins
   plugins = {
     init = {
       -- You can disable default plugins as follows:
@@ -64,10 +64,11 @@ local config = {
     ["mason-lspconfig"] = { -- overrides `require("mason-lspconfig").setup(...)`
       ensure_installed = {
         "sumneko_lua",
+        "clangd",
         "bashls",
         "gopls",
         "pyright",
-        "ruby",
+        "ruby_ls",
         "rust_analyzer",
         "taplo",
         "vimls"
