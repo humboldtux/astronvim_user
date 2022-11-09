@@ -63,13 +63,13 @@ local config = {
     -- use mason-lspconfig to configure LSP installations
     ["mason-lspconfig"] = { -- overrides `require("mason-lspconfig").setup(...)`
       ensure_installed = {
-        "sumneko_lua",
-        "clangd",
         "bashls",
+        "clangd",
         "gopls",
         "pyright",
         "ruby_ls",
         "rust_analyzer",
+        "sumneko_lua",
         "taplo",
         "vimls"
       },
@@ -77,9 +77,10 @@ local config = {
     -- use mason-tool-installer to configure DAP/Formatters/Linter installation
     ["mason-tool-installer"] = { -- overrides `require("mason-tool-installer").setup(...)`
       ensure_installed = {
-        "codelldb",
         "bash-debug-adapter",
+        "codelldb",
         "debugpy",
+        "delve",
         "go-debug-adapter",
         "golangci-lint",
         "jq",
