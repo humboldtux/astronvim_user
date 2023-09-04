@@ -31,7 +31,6 @@ return {
         "golangci-lint",
         "jq",
         "luacheck",
-        "markdownlint",
         "prettier",
         "rubocop",
         "shellcheck",
